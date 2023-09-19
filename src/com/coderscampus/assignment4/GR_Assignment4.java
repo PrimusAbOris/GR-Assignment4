@@ -1,13 +1,13 @@
 package com.coderscampus.assignment4;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class GR_Assignment4 {
 	public static int FILE_LENGTH = 101;
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 		Student[] allStudents; //this will be populated first
 		Student[] compSciStudents; // this will become course1.csv
 		Student[] apmthStudents; // course2.csv

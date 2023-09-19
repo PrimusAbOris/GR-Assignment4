@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class GR_Assignment4 {
+	public static int FILE_LENGTH = 101;
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Student[] allStudents; //this will be populated first
@@ -13,12 +14,16 @@ public class GR_Assignment4 {
 		Student[] statStudents; // course3.csv
 		
 	
-		BufferedReader br = new BufferedReader(new FileReader("student-master-list.csv"));
+
+		FileReadService.getStudentArray("student-master-list.csv");
 		
 		
-		String[] arrayFromCSV;
+		// a method in FileReadService will return...
+		// String[] arrayFromCSV;
 		
 		ArraySortService.arraySort();
+		// split the array into three parts, based on the String "course"... if statement?
+		
 		// FileWriteService.writeToFile;
 		// course1.csv, course2.csv, course3.csv
 

@@ -15,13 +15,10 @@ public class GR_Assignment4 {
 		
 	
 
-		FileReadService.getStudentArray("student-master-list.csv");
+		Student[] studentArray = FileReadService.getStudentArray("student-master-list.csv");
 		
 		
-		// a method in FileReadService will return...
-		// String[] arrayFromCSV;
-		
-		ArraySortService.arraySort();
+		ArraySortService.arraySort(studentArray);
 		// split the array into three parts, based on the String "course"... if statement?
 		
 		// FileWriteService.writeToFile;

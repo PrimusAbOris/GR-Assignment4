@@ -3,6 +3,10 @@ package com.coderscampus.assignment4;
 public class Student {
 	// Student POJO based on provided CSV
 	private int studentId;
+	private String name;
+	private String course;
+	private int grade;
+	
 	public int getStudentId() {
 		return studentId;
 	}
@@ -34,10 +38,6 @@ public class Student {
 	public void setGrade(int grade) {
 		this.grade = grade;
 	}
-
-	private String name;
-	private String course;
-	private int grade;
 
 	public Student(int studentId, String name, String course, int grade) {
 		this.studentId = studentId;

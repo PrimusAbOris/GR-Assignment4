@@ -3,6 +3,7 @@ package com.coderscampus.assignment4;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class GR_Assignment4 {
 	public static int FILE_LENGTH = 101;
@@ -21,6 +22,10 @@ public class GR_Assignment4 {
 		compSciStudents = ArraySortService.arraySortBySubject(allStudents,"CS");
 		statStudents = ArraySortService.arraySortBySubject(allStudents,"stats");
 		apmthStudents = ArraySortService.arraySortBySubject(allStudents,"math");
+		
+		Arrays.sort(compSciStudents); // this crashes--Student cannot be cast to class java.lang.Comparable?
+		Arrays.sort(apmthStudents);
+		Arrays.sort(statStudents);
 		
 		FileWriteService.writeFile(compSciStudents);
 		FileWriteService.writeFile(statStudents);

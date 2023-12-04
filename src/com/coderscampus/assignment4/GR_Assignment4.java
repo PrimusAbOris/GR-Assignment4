@@ -1,3 +1,4 @@
+//due to crashes, sort arrays in a method here?
 package com.coderscampus.assignment4;
 
 import java.io.BufferedReader;

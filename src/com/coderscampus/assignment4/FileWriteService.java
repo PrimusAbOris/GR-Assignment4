@@ -1,3 +1,4 @@
+// might need to be simpler; should only split each line once
 package com.coderscampus.assignment4;
 
 import java.io.FileWriter;
@@ -11,7 +12,7 @@ public class FileWriteService {
 
 			for (Student student : allInSubject) {
 				if (student != null) {
-					fw1.write(student.toString() + "\n");
+					fw1.write(student.toString() + "\n"); // probably not efficient
 				}
 			}
 			if (allInSubject[0].getCourse().contains("STAT")) { // outputting the Stat student CSV

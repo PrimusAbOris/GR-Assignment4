@@ -2,6 +2,9 @@ package com.coderscampus.assignment4;
 
 public class Student {
 	// Student POJO based on provided CSV
+	
+	//example line: 91,Donald Schultz,COMPSCI 321,87
+	//              ID,name          ,subject [/],grade
 	private int studentId;
 	private String name;
 	private String course;

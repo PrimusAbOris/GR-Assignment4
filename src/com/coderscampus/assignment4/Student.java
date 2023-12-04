@@ -5,16 +5,16 @@ public class Student {
 	
 	//example line: 91,Donald Schultz,COMPSCI 321,87
 	//              ID,name          ,subject [/],grade
-	private int studentId;
+	private String studentId; // no ints, this lets them all be strings
 	private String name;
 	private String course;
-	private int grade;
+	private String grade;
 	
-	public int getStudentId() {
+	public String getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(int studentId) {
+	public void setStudentId(String studentId) {
 		this.studentId = studentId;
 	}
 
@@ -34,7 +34,7 @@ public class Student {
 		this.course = course;
 	}
 
-	public int getGrade() {
+	public String getGrade() {
 		return grade;
 	}
 
@@ -42,7 +42,7 @@ public class Student {
 		this.grade = grade;
 	}
 
-	public Student(int studentId, String name, String course, int grade) {
+	public Student(String studentId, String name, String course, String grade) {
 		this.studentId = studentId;
 		this.name = name;
 		this.course = course;

@@ -5,14 +5,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileWriteService {
-	public static void writeFile(Student[] allInSubject) throws IOException {
+	public static void writeFile(Student[] allInSubject, String filename) throws IOException {
 		if (allInSubject[0].getCourse().contains("COMPSCI")) { // outputting the CompSci CSV
 			FileWriter fw1 = new FileWriter("course1.csv");
 			fw1.write("Student ID,Student Name,Course,Grade\n");
 
 			for (Student student : allInSubject) {
 				if (student != null) {
-					fw1.write(student.toString() + "\n"); // probably not efficient
+					System.out.println(student.toString()); //comment out later
+					fw1.write(student.toString() + "\n");
 				}
 			}
 			if (allInSubject[0].getCourse().contains("STAT")) { // outputting the Stat student CSV
